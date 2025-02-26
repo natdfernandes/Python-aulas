@@ -7,12 +7,15 @@
 # acima: MASTER
 
 ano = int(input("Digite o ano de seu nascimento: "))
-anoatual = 2025 - ano
-idade = anoatual
+idade = 2025 - ano
 
-if ano <= 2016:
+if idade <= 9:
     print("Você é da categoria MIRIM!")
-elif ano <= 2011:
+elif idade <= 14:
     print("Você é da categoriaa INFANTIL!")
-elif ano <= 2006:
+elif idade <= 19:
     print("Você é da categoria JUNIOR!")
+elif idade == 20:
+    print("Você é da categoria SêNIOR!")
+else:
+    print("Você é da categoria MASTER!")
