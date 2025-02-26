@@ -5,7 +5,13 @@
 # seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
 
 anos = int(input("Digite o ano do seu nascimento: "))
-meses = 12 * anos
+idade = 2025 - anos
 
-if anos == 18:
-    print("Você precisa se alistar no exércit! {}".format(meses))
+if idade == 18:
+    print("Você precisa se alistar no exército!")
+elif idade > 18:
+    atraso = idade - 18
+    print("Você passou do prazo de alistamento! {} anos".format(atraso))
+else:
+    falta = 18 - idade
+    print("Ainda falta tempo para se alistar!{} anos".format(falta))
